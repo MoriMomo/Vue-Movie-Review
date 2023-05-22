@@ -55,6 +55,10 @@ export default {
       return this.movieData.length == 0 ? 0 : this.movieData.length;
     },
   },
+
+  created() {
+    this.$store.dispatch("getMovies");
+  },
 };
 </script>
 
